@@ -25,6 +25,12 @@ Through these steps, we converted our initial dataset to one suitable for invest
   
 ### Univariate Analysis
 From this chart, we can see the distribution of people affected by power outages. There are very few incidents that affected more than 0.5 million people - however, in certain outages, over 3 million were affected. 
+<iframe
+  src="assets/univariate.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Bivariate Analysis
 This histogram compares the amount of people affected by an outage duration with the duration of the incident. The data are binned to provide easier readability and to better determine if there is a correlation with the two variables. 
