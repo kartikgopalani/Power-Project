@@ -67,15 +67,15 @@ The P-Value of 0.002 for the 'CLIMATE.CATEGORY' permutation test suggests a high
 
 **'CLIMATE.REGION': P-Value= 0.165**
 The P-Value of 0.165 for the 'CLIMATE.REGION' permutation test suggests that there is not a correlation between the climate region and missingness of the related 'OUTAGE.DURATION' value. Although there might be some correlation between the values, the results are not statistically significant enough to suggest that the 'OUTAGE.DURATION' column is MAR based on the 'CLIMATE.REGION' column.
- 
- ## Hypothesis Testing
- #### Null Hypothesis (H0):
- The distribution of outage durations in the 'MRO' region is the same as the distribution of outage durations in all regions.
 
- #### Alternative Hypothesis (H1):
- The distribution of outage durations in the 'MRO' region is different from the distribution of outage durations in all regions.
+## Hypothesis Testing
+#### Null Hypothesis (H0):
+The distribution of outage durations in the 'MRO' region is the same as the distribution of outage durations in all regions.
 
- _threshold:_ 0.05%
+#### Alternative Hypothesis (H1):
+The distribution of outage durations in the 'MRO' region is different from the distribution of outage durations in all regions.
+
+_threshold:_ 0.05%
  
  ## Framing a Prediction Model
  ## Baseline Model
