@@ -68,7 +68,7 @@ The P-Value of 0.002 for the 'CLIMATE.CATEGORY' permutation test suggests a high
 
 A histogram displaying the empirical distribution of the climate category and our observed statistic is displayed below. From this graph, we can see that the observed statistic is significantly higher than the empirical distribution, showing how there must be a relationship between 'OUTAGE.DURATION' and 'CLIMATE.CATEGORY'.
 <iframe
-  src="assets/climate_cat.html"
+  src="assets/climate_cat2.html"
   width="800"
   height="600"
   frameborder="0"
