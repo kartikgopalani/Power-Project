@@ -63,7 +63,17 @@ We chose to analyze the missingness of the 'OUTAGE.DURATION' column to determine
 In order to analyze missingness, we computed permutation tests comparing the 'OUTAGE.DURATION' column with two other columns: 'CLIMATE.CATEGORY' and 'CLIMATE.REGION'. 
 
 **'CLIMATE.CATEGORY': P-Value= 0.002**
+
 The P-Value of 0.002 for the 'CLIMATE.CATEGORY' permutation test suggests a high level of correlation between climate category and missingness of the related 'OUTAGE.DURATION' value. This implies that the 'OUTAGE.DURATION' column is MAR based on 'CLIMATE.CATEGORY'.
+
+A histogram displaying the empirical distribution of the climate category and our observed statistic is displayed below. From this graph, we can see that the observed statistic is significantly higher than the empirical distribution, showing how there must be a relationship between 'OUTAGE.DURATION' and 'CLIMATE.CATEGORY'.
+<iframe
+  src="assets/hypothesis_test.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 
 **'CLIMATE.REGION': P-Value= 0.165**
 The P-Value of 0.165 for the 'CLIMATE.REGION' permutation test suggests that there is not a correlation between the climate region and missingness of the related 'OUTAGE.DURATION' value. Although there might be some correlation between the values, the results are not statistically significant enough to suggest that the 'OUTAGE.DURATION' column is MAR based on the 'CLIMATE.REGION' column.
