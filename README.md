@@ -56,6 +56,7 @@ This histogram bins the data and sums the amount of people affected from an outa
   height="600"
   frameborder="0"
 ></iframe>
+
 ## Assessment of Missingness
 ### Is the 'CAUSE.CATEGORY.DETAIL' Column NMAR?
 After initial analysis, we came to the conclusion that the 'CAUSE.CATEGORY.DETAIL' column of the dataset is likely NMAR, since the values missing in the column depend on the categories that they would be a part of. Outages that are started because of cyber attacks, or other similar issues that have to do with national security might be missing due to the sensitive nature of their causation. In the case that those in charge of releasing this information to the public do not want the cause of the outage known to the public for security purposes, the values would be missing based on the category they are a part of. Thus, we came to the conclusion that the missingness of the 'CAUSE.CATEGORY.DETAIL' column is NMAR. 
