@@ -25,13 +25,16 @@ Through these steps, we converted our initial dataset to one suitable for invest
   
 ### Univariate Analysis
 From this chart, we can see the distribution of power outage duration, and notice that almost all outages occured for less than 500 hours, with most occuring less than 200 hours. We can also see that there are certain outliers that might disrupt the accuracy of future data analysis that we conduct. 
+
 <iframe
   src="assets/univariate_1.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+
 From this next chart, we see the distribution of number of people affected by each outage. We can determine that very few incidents affected more than 0.5 million people, although a few affected even more than 3 million people.
+
 <iframe
   src="assets/univariate_2.html"
   width="800"
