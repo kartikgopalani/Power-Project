@@ -24,16 +24,38 @@ Through these steps, we converted our initial dataset to one suitable for invest
 
   
 ### Univariate Analysis
-From this chart, we can see the distribution of people affected by power outages. There are very few incidents that affected more than 0.5 million people - however, in certain outages, over 3 million were affected. 
+From this chart, we can see the distribution of power outage duration, and notice that almost all outages occured for less than 500 hours, with most occuring less than 200 hours. We can also see that there are certain outliers that might disrupt the accuracy of future data analysis that we conduct. 
 <iframe
-  src="assets/univariate.html"
+  src="assets/univariate_1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+From this next chart, we see the distribution of number of people affected by each outage. We can determine that very few incidents affected more than 0.5 million people, although a few affected even more than 3 million people.
+<iframe
+  src="assets/univariate_2.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
 ### Bivariate Analysis
-This histogram compares the amount of people affected by an outage duration with the duration of the incident. The data are binned to provide easier readability and to better determine if there is a correlation with the two variables. 
+This first histogram compares the amount of people affected by an outage duration with the duration of the incident. The distribution is relatively spread evenly, but is quite difficult to read, which is why we binned the data in the next graph to make more meaningful conclusions about the data at hand.
+<iframe
+  src="assets/bivariate_1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+This histogram bins the data and sums the amount of people affected from an outage based on each bin. From this histogram, we can notice that the sum of people affected by an outage drops significantly after the duration length surpasses 250 hours. 
+<iframe
+  src="assets/bivariate_2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
    
 ## Assessment of Missingness
 ### Is the 'CAUSE.CATEGORY.DETAIL' Column NMAR?
