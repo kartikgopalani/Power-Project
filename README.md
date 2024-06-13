@@ -92,7 +92,13 @@ The distribution of outage durations in the 'MRO' region is the same as the dist
 The distribution of outage durations in the 'MRO' region is different from the distribution of outage durations in all regions.
 
 _threshold:_ 0.05%
- 
+#### Methodology:
+We chose to use the absolute difference in means as our test statistic in order to calculate if there was a significant difference in the distribution of outage durations for the 'MRO' region versus outage durations in all regions. We chose to use the absolute difference because we were not trying to see if the 'MRO' outage durations were larger or smaller than the general regions; we simply wanted to determine if distributions were different.
+
+We based our distributions by randomly permuting the 'Outage Duration' column we computed earlier, and then took samples comparing durations where the region was 'MRO' with durations where the region was generalized. 
+
+#### Conclusion: 
+With a p-value of 0.2152, we fail to reject the null hypothess, as it is significantly higher than our threshold p-value of 0.05. We do not have sufficient data to prove that the distribution of outage durations in the 'MRO' region are significantly different from the durations of outages in all regions. 
  ## Framing a Prediction Model
  ## Baseline Model
  ## Final Model
