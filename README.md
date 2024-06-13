@@ -14,15 +14,9 @@ To work with the data in an efficient manner, we had to first clean it up throug
 ### Initial Cleaning
 We first started by importing the 'outage.xlsx' file. From there, we made sure that our DataFrame only contained information relevant to our research by eliminating columns such as the blank 'variables' column and skipping over the beginning metadata rows that did not contain informtion necessary.
    
-### Timestamp Conversion
-In order to precisely calculate outage durations, we converted the data by merging the date and time columns into single date-time columns - 'OUTAGE.START' and 'OUTAGE.END'. 
+### Creating Columns
+In order to precisely calculate outage durations, we converted the data by merging the date and time columns into single date-time columns - 'OUTAGE.START' and 'OUTAGE.RESTORATION'. From our timestamp columns, 'OUTAGE.START' and 'OUTAGE.RESTORATION', we calculated the duration of each outage in the datetime format. Calculating the duration of all events was crucial in order to further perform exploratory data analysis and determine whether the outage duration affected other aspects of data, including how many people were affected.
 
-### Duration Calculation
-From our timestamp columns, 'OUTAGE.START' and 'OUTAGE.END', we calculated the duration of each outage in the datetime format. Calculating the duration of all events was crucial in order to further perform exploratory data analysis and determine whether the outage duration affected other aspects of data, including how many people were affected.
-
-Through these steps, we converted our initial dataset to one suitable for investigative data analysis.
-
-  
 ### Univariate Analysis
 From this chart, we can see the distribution of power outage duration, and notice that almost all outages occured for less than 500 hours, with most occuring less than 200 hours. We can also see that there are certain outliers that might disrupt the accuracy of future data analysis that we conduct. 
 
@@ -59,9 +53,12 @@ This histogram bins the data and sums the amount of people affected from an outa
 ></iframe>
 
 ## Assessment of Missingness
+
+
 ### Is the 'CAUSE.CATEGORY.DETAIL' Column NMAR?
 After initial analysis, we came to the conclusion that the 'CAUSE.CATEGORY.DETAIL' column of the dataset is likely NMAR, since the values missing in the column depend on the categories that they would be a part of. Outages that are started because of cyber attacks, or other similar issues that have to do with national security might be missing due to the sensitive nature of their causation. In the case that those in charge of releasing this information to the public do not want the cause of the outage known to the public for security purposes, the values would be missing based on the category they are a part of. Thus, we came to the conclusion that the missingness of the 'CAUSE.CATEGORY.DETAIL' column is NMAR. 
  
+
 ### Missingness Analysis of the 'OUTAGE.DURATION' Problem
 We chose to analyze the missingness of the 'OUTAGE.DURATION' column to determine whether or not the duration of a power outage was missing at random based off other columns in the data. Additionally, assessing the missingness out the 'OUTAGE.DURATION' column would give us more insight on the missingness of other similar columns that had to do with time, such as the 'OUTAGE.START' column. 
 
