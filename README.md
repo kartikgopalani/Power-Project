@@ -15,7 +15,14 @@ To work with the data in an efficient manner, we had to first clean it up throug
 We first started by importing the 'outage.xlsx' file. From there, we made sure that our DataFrame only contained information relevant to our research by eliminating columns such as the blank 'variables' column and skipping over the beginning metadata rows that did not contain informtion necessary.
    
 ### Creating Columns
-In order to precisely calculate outage durations, we converted the data by merging the date and time columns into single date-time columns - 'OUTAGE.START' and 'OUTAGE.RESTORATION'. From our timestamp columns, 'OUTAGE.START' and 'OUTAGE.RESTORATION', we calculated the duration of each outage in the datetime format. Calculating the duration of all events was crucial in order to further perform exploratory data analysis and determine whether the outage duration affected other aspects of data, including how many people were affected.
+In order to precisely calculate outage durations, we converted the data by merging the date and time columns into single date-time columns - 'OUTAGE.START' and 'OUTAGE.RESTORATION'. From our timestamp columns, 'OUTAGE.START' and 'OUTAGE.RESTORATION', we calculated the duration of each outage in the datetime format. Calculating the duration of all events was crucial in order to further perform exploratory data analysis and determine whether the outage duration affected other aspects of data, including how many people were affected. Below is the head of our cleaned dataframe:
+
+<iframe
+  src="assets/dfhead.png"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Univariate Analysis
 From this chart, we can see the distribution of power outage duration, and notice that almost all outages occured for less than 500 hours, with most occuring less than 200 hours. We can also see that there are certain outliers that might disrupt the accuracy of future data analysis that we conduct. 
@@ -122,7 +129,7 @@ Out of all the recorded incidents, we found that half of them are caused by seve
 #### Model Features and Preprocessing
 We chose to add three quantitative features, month, year and time. We had to create a helper function to help us encode time, transforming it into a 24-hour integer format. We chose these features because climate events can be tracked by month, for example, we suspect that more severe weather events happen in winter. We also chose year as a feature, because we suspect that climate change would have an impact on severe weather events. Finally, we chose time as a feature because it rains more frequently during the day, which could cause a severe weather event.
 #### Final Model Assessment
-We chose to use a similar LogisticRegression classifier, and we manually tested for our hyperparameter of max iteration. We found that a max iteration value of ~500 was ideal for our model.  Our final model had a test performance of around **0.73**, and a test performance of around **0.75**, a decent improvement from our baseline model. Therefore, we consider this model an improvement, and therefore a ‘good’ model.
+We chose to use a similar LogisticRegression classifier, and we manually tested for our hyperparameter of max iteration. We found that a max iteration value of ~500 was ideal for our model.  Our final model had a test performance of around **0.73**, and a test performance of around **0.75**, a decent improvement from our baseline model. Therefore, we consider this model an improvement, and therefore a ‘good’ model. 
 
 ## Fairness Analysis
 
