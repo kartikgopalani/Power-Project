@@ -1,12 +1,12 @@
 # Power Outages
-Power outages are typically known to be short and uneventful, as people are typically unaffected in the duration that they are unaffected. However, longer-lasting power outages can cause significantly more damage, especially since a lot of crucial processes need power in order to operate properly and effectively. Having the ability to determine how long a duration will last could significantly help people prepare for such an incident, as they would be able to decide what resources they would need in order to conduct themselves safely during an outage. When considering longer-lasting power outages, we ask whether more people are affected by longer power outages compared to short ones. Is there a relationship between the length of a power outage and how many people are affected?
+Power outages are typically short inconveniences that lead people to lose access to various resources and infrastructure that they might require. In most cases, these outages are caused by severe weather patterns or over-use of the power grid. Having the ability to determine what caused a power outage could significantly help those in power to figure out how to minimize the duration of an outage. 
 
-We decided to research the 
-
- ---
+---
 
 ## Introduction
-The dataset we have implemented contains data ranging from 2000 to 2016. 
+The dataset we have implemented contains data ranging from 2000 to 2016. Most power outages are typically caused by severe weather patterns, as storms such as tornadoes and hurricanes can significantly disrupt power sources necessary to light up millions of homes. However, in some cases power outages can be caused by other factors, such as intentional attacks. Having the ability to predict what causes an outage could be beneficial for city officials to inform residents how to conduct themselves safely.
+
+We decided to study power outages based on whether they are caused by severe weather in this project, and we considered a variety of factors in our 1534-row dataset to better analyze the patterns displayed. In our dataset, exactly 0.5 of the outages were caused by severe weather. We utilized columns such as 'OUTAGE.START' and 'OUTAGE.END' to determine the length of an outage, 'CLIMATE.REGION' and 'U.S._State' to determine where an outage happened, and 'CAUSE.CATEGORY' to see why an outage happened. 
 
 ## Data Cleaning and Exploratory Data Analysis
 To work with the data in an efficient manner, we had to first clean it up through several different steps so we could perform analysis on it to determine if there was a relationship with outage duration and the amount of people affected. 
