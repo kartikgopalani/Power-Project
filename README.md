@@ -106,8 +106,19 @@ With a p-value of 0.2152, we fail to reject the null hypothess, as it is signifi
   frameborder="0"
 ></iframe>
 
- ## Framing a Prediction Model
- ## Baseline Model
+## Framing a Prediction Model
+From our earlier data analysis and reasoning, we came up with a new question to solve: _**Based on data available when a power outage initially begins, can we predict whether an outage was due to severe weather?**_
+We used a Binary Classification Task, and utilized four features from the data: 'YEAR', 'MONTH', 'OUTAGE.START.TIME', and 'U.S._STATE'. These features enables to gain a better understanding of the time and region in which the power outages were occuring, and helped guide to create a model in which we could accurately predict whether an outage was caused by severe weather patterns. We will predict the response variable 'is_sw', which we created based off of the 'CAUSE.CATEGORY' column from the inital dataset. The response variable 'is-sw' returns 'True' if the outage is indeed caused by severe weather and 'False' if the outage is caused by another factor. Since we were primarily dealing with predicting the 'is_sw' response variable, we used binary classification instead of multi-class classification, as we believed we would gain more accurate results solely predicting a binary variable. 
+
+The metric we are using to assess our model is accuracy. In our prediction model, we care most about having the ability to generalize correct predictions for both when the power outage is caused by severe weather and when it is not. Having a false positive result from our prediction would be problematic as it would lead officials to believe that an outage was weather-related, when it might be due to an intentional attack. This could slow down city officials' ability to find perpetrators, letting them more easily escape without getting in trouble with law enforcement. On the other hand, having a false negative result might lead officials to negate weather concerns, allowing residents of a given area to think it is safe for them to go outside when it might not be. This is especially a concern in remote areas, where inhabitants might not have access to news and resources that might tell them otherwise. Because both precision and recall are important to our prediction model, we decided to assess the model based on accuracy, which considers false positives and negatives with the same weight. 
+
+## Baseline Model
+#### Model Description
+#### Model Parameters
+#### Features and Preprocessing
+#### Base Model Assessment
+**Model Performance**
+
  ## Final Model
  ## Fairness Analysis
  
