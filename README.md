@@ -102,7 +102,7 @@ The distribution of outage durations in the 'MRO' region is the same as the dist
 #### Alternative Hypothesis (H1):
 The distribution of outage durations in the 'MRO' region is different from the distribution of outage durations in all regions.
 
-_threshold:_ 0.05%
+_threshold:_ 0.05
 #### Methodology:
 We chose to use the absolute difference in means as our test statistic in order to calculate if there was a significant difference in the distribution of outage durations for the 'MRO' region versus outage durations in all regions. We chose to use the absolute difference because we were not trying to see if the 'MRO' outage durations were larger or smaller than the general regions; we simply wanted to determine if distributions were different.
 
