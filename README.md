@@ -118,14 +118,14 @@ We chose to use the LogisticRegression classifier because our question was a bin
 #### Model Features and Preprocessing
 We used two nominal (categorical) features: CLIMATE.CATEGORY and U.S._STATE. We picked those because we felt that geographical data would help our predictions: this data is also available at all times, as it is constant. We encoded both using a OneHotEncoder, dropping a column to avoid multicollinearity. 
 #### Base Model Assessment
-Out of all the recorded incidents, we found that half of them are caused by severe weather, which gave us a minimum required testing score of 0.5. Our model was able to consistently outscore that, with a test score of around 0.68 and a train score of around 0.7. So, we consider a baseline model a ‘good’ model.
-**Model Performance**
+Out of all the recorded incidents, we found that half of them are caused by severe weather, which gave us a minimum required testing score of 0.5. Our model was able to consistently outscore that, with a test score of around **0.68** and a train score of around **0.70**. So, we consider a baseline model a ‘good’ model.
+
 
 ## Final Model
 #### Model Features and Preprocessing
 We chose to add three quantitative features, month, year and time. We had to create a helper function to help us encode time, transforming it into a 24-hour integer format. We chose these features because climate events can be tracked by month, for example, we suspect that more severe weather events happen in winter. We also chose year as a feature, because we suspect that climate change would have an impact on severe weather events. Finally, we chose time as a feature because it rains more frequently during the day, which could cause a severe weather event.
 #### Final Model Assessment
-We chose to use a similar LogisticRegression classifier, and we manually tested for our hyperparameter of max iteration. We found that a max iteration value of ~500 was ideal for our model.  Our final model had a test performance of around 0.73, and a test performance of around 0.75, a decent improvement from our baseline model. Therefore, we consider this model an improvement, and therefore a ‘good’ model.
+We chose to use a similar LogisticRegression classifier, and we manually tested for our hyperparameter of max iteration. We found that a max iteration value of ~500 was ideal for our model.  Our final model had a test performance of around **0.73**, and a test performance of around **0.75**, a decent improvement from our baseline model. Therefore, we consider this model an improvement, and therefore a ‘good’ model.
 
 ## Fairness Analysis
 
