@@ -58,7 +58,14 @@ This histogram bins the data and sums the amount of people affected from an outa
   height="600"
   frameborder="0"
 ></iframe>
-
+### Interesting groupby
+We chose this groupby to better understand the data based on how long outage duration was, and this backed up our understanding that most outages are short, but there are longer outages that can affect lots of people (usually hurricanes or other extreme weather events).
+<iframe
+  src="assets/interestinggroupby.png"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 ## Assessment of Missingness
 
 
