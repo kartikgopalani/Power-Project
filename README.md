@@ -145,3 +145,13 @@ We chose to use a similar LogisticRegression classifier, and we manually tested 
 - **Significance Level (α):** 0.05. This indicates that there is a 5% risk that we compute a difference in the models even if there is no difference.
 
 ### Resulting P-Value
+- **p-value:** From our permutation test, we obtained a p-value, which shows the probability of observing a test statistic that is as great as, or greater than, the one computed if the null hypothesis was deemed true.
+
+Since our P-Value is greater than 0.05, we fail to reject the null hypothesis. This means that we do not have sufficient evidence to conclude that the model is significantly different for states with a Real GSP from the Utility industry higher than the United States median and states with a Real GSP from the Utility industry lower than the United States median. Our fairness model's values are shown below:
+
+| Metric               | Value                  |
+|----------------------|------------------------|
+| Accuracy (Higher)    | 0.7279                 |
+| Accuracy (Lower)     | 0.7949                 |
+| Observed Difference  | -0.0670                |
+| p-value              | 0.2024                 |
