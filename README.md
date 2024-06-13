@@ -120,5 +120,22 @@ The metric we are using to assess our model is accuracy. In our prediction model
 **Model Performance**
 
  ## Final Model
- ## Fairness Analysis
- 
+
+## Fairness Analysis
+
+### Groups and Evaluation Metric
+
+#### We created the groups using the 'UTIL.REALGSP' column
+- **Group X:** States with a Real GSP contributed by the Utility industry (Measured in 2009 chained U.S. dollars) relative to the Real GSP contributed by the Utility industry of the general United States that is greater than 1. In other words, this group includes the states that have a higher median Real GSP from the Utility industry than that of the United States.
+- **Group Y:** States with a Real GSP contributed by the Utility industry relative to the Real GSP contributed by the Utility industry of the general United States that is less than 1. In other words, this group includes the states that have a lower median Real GSP from the Utility industry than that of the United States.
+- We used an evaluation metric of accuracy for this model. The accuracy will calculate the total amount of accurate predictions proportional to the total predictions made from the model. 
+
+### Null and Alternative Hypotheses
+- **Null Hypothesis (H0):** The model performance is fair in all groups. Our accuracy for predicting whether an outage is caused by severe weather is roughly similar for states with a lower Real GSP contributed by the Utility industry and higher Real GSP contributed to the Utility industry relative to the Real GSP contributed by the Utility Industry for the United States.
+- **Alternative Hypothesis (H1):** The model performance is not fair across the groups. Our prediction model for assessing whether an outage was caused by severe weather is different for Group X and Group Y.
+
+### Choice of Test Statistic and Significance Level
+- **Test Statistic:** The absolute difference of the accuracy of Group X and Group Y.
+- **Significance Level (α):** 0.05. This indicates that there is a 5% risk that we compute a difference in the models even if there is no difference.
+
+### Resulting P-Value
