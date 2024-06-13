@@ -44,7 +44,7 @@ From this next chart, we see the distribution of number of people affected by ea
 ></iframe>
 
 ### Bivariate Analysis
-This first histogram compares the amount of people affected by an outage duration with the duration of the incident. The distribution is relatively spread evenly, but is quite difficult to read, which is why we binned the data in the next graph to make more meaningful conclusions about the data at hand.
+This first graph compares the amount of people affected by an outage duration with the duration of the incident. The distribution is relatively spread evenly, but is quite difficult to read, which is why we binned the data in the next graph to make more meaningful conclusions about the data at hand.
 <iframe
   src="assets/bivariate_1.html"
   width="800"
