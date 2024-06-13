@@ -19,8 +19,8 @@ In order to precisely calculate outage durations, we converted the data by mergi
 
 <iframe
   src="assets/dfhead.png"
-  width="800"
-  height="600"
+  width="600"
+  height="300"
   frameborder="0"
 ></iframe>
 
