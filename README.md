@@ -143,8 +143,8 @@ We chose to use a similar LogisticRegression classifier, and we manually tested 
 ### Groups and Evaluation Metric
 
 #### We created the groups using the 'UTIL.REALGSP' column
-- **Group X:** States with a Real GSP contributed by the Utility industry (Measured in 2009 chained U.S. dollars) relative to the Real GSP contributed by the Utility industry of the general United States that is greater than 1. In other words, this group includes the states that have a higher median Real GSP from the Utility industry than that of the United States.
-- **Group Y:** States with a Real GSP contributed by the Utility industry relative to the Real GSP contributed by the Utility industry of the general United States that is less than 1. In other words, this group includes the states that have a lower median Real GSP from the Utility industry than that of the United States.
+- **Group X:** States with a Real GSP contributed by the Utility industry (Measured in 2009 chained U.S. dollars) relative to the Real GSP contributed by the Utility industry of the general United States that is greater than the median (6971). In other words, this group includes the states that have a higher median Real GSP from the Utility industry than that of the United States.
+- **Group Y:** States with a Real GSP contributed by the Utility industry relative to the Real GSP contributed by the Utility industry of the general United States that is less than the median. In other words, this group includes the states that have a lower median Real GSP from the Utility industry than that of the United States.
 - We used an evaluation metric of accuracy for this model. The accuracy will calculate the total amount of accurate predictions proportional to the total predictions made from the model. 
 
 ### Null and Alternative Hypotheses
