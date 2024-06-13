@@ -98,7 +98,14 @@ We chose to use the absolute difference in means as our test statistic in order 
 We based our distributions by randomly permuting the 'Outage Duration' column we computed earlier, and then took samples comparing durations where the region was 'MRO' with durations where the region was generalized. 
 
 #### Conclusion: 
-With a p-value of 0.2152, we fail to reject the null hypothess, as it is significantly higher than our threshold p-value of 0.05. We do not have sufficient data to prove that the distribution of outage durations in the 'MRO' region are significantly different from the durations of outages in all regions. 
+With a p-value of 0.2152, we fail to reject the null hypothess, as it is significantly higher than our threshold p-value of 0.05. We do not have sufficient data to prove that the distribution of outage durations in the 'MRO' region are significantly different from the durations of outages in all regions. Below, a Histogram is displayed comparing the observed statistic with the permuted statistics from our samples. 
+<iframe
+  src="assets/final_hyp.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
  ## Framing a Prediction Model
  ## Baseline Model
  ## Final Model
